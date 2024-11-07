@@ -24,4 +24,28 @@ img {
 
 body {
   background-color: aqua;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  border: 2px solid black;
+  width: 30rem;
+  height: 5rem;
+}
+
+main {
+  border: 2px solid black;
+  width: 30rem;
+  height: 40rem;
+}
+
+footer {
+  border: 2px solid black;
+  width: 30rem;
+  height: 5rem;
 }
