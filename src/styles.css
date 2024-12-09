@@ -42,10 +42,47 @@ main {
   border: 2px solid black;
   width: 30rem;
   height: 40rem;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
 }
 
 footer {
   border: 2px solid black;
   width: 30rem;
   height: 5rem;
+}
+
+.location_selection_section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.location_selection_section > label {
+  display: flex;
+}
+
+.location_selection_section > input {
+  padding-left: 5rem;
+  width: 15rem;
+  height: 2rem;
+}
+
+.generate_button_section {
+  display: flex;
+  justify-content: center;
+}
+
+.image_section {
+  width: 10rem;
+  height: 10rem;
+}
+
+.data_section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
 }

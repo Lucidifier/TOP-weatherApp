@@ -4,6 +4,7 @@ import drawUI from './drawUI';
 import { dataArr } from '.';
 
 async function getWeather() {
+  console.log('getWeahter');
   const location = getLocation();
   const now = date.format(new Date(), 'YYYY-MM-DD');
   console.log('now date', now);
@@ -12,14 +13,8 @@ async function getWeather() {
   const weatherData = await weather.json();
   console.log('steptwo', weatherData);
   console.log('dataArrInit', dataArr);
-  if(dataArr.length > 0) {
-    for (let i = 0; i <= dataArr.length; i++) {
-      dataArr.pop()
-      console.log('dataArr loop', dataArr);
-    }
-  }
-  dataArr.push(weatherData.days[0].conditions, weatherData.days[0].temp);
-  console.log('dataArr', dataArr);
+  
+  return weatherData;
 }
 
 export default getWeather;
